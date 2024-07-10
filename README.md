@@ -24,10 +24,46 @@ app.listen (PORT, () => {
 ´´´
 "start": "node ./src/server.js",
 "dev": "nodemon ./src/server.js"
- ´´´
+´´´
 
 8. Ejecutar: npm start
 
 9. Instalar nodemon: npm install --save-dev nodemon
 
 10. Ejecutar: npm run dev
+
+11.
+
+12.
+
+13.
+
+14.
+
+15.
+
+16.
+
+17.
+
+18.
+
+19.
+
+20.
+
+21.
+
+22.
+
+23.
+
+24.
+
+25.
+
+26.
+
+27.
+
+

@@ -168,10 +168,25 @@ por:
 app.use('/games', gameRoutes) // todas las rutas tendrán el prefijo /api, en este caso
 ´´´
 
+34. Se crea un enroutador: a la altura de server.js, crear un ficher "router.js" y allí:
+´´´
+import { Router } from 'express';
 
+const router = Router()
 
+export { router }
+´´´
+35. Para cada entidad se repetirán los pasos, se creará una carpeta para cada una y dentro se harán el modelo, las rutas y el controlador.
+
+36. La ruta está conformada por server+router+entityroute: ejemplo:
+/api/v1/users/register
+
+37. Recordar encriptar la contraseña, y que para esto es necesario instalar bcrypt:
+npm install bcrypt
+38. Para que funcione en Thunder Client hay que reiniciar el servidor (en terminal, control+c)
 
 
 
 NOTAS: 
 - Para el naming, las Clases empiezan con mayúscula y las funciones en minúscula.
+- Solo puede haber un export defautl por archivo.
